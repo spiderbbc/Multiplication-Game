@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="row">
+        <h2 style="color: #3f51b5; text-align: center;">
+          Enter your answer and click Submit
+        </h2>
+      </div>
+      <div class="row">
+        <div style="width: 250px; height: 60px;">
+          <h3 id="currentQuestion"></h3>
+        </div>
+        <div style="width: 250px; height: 60px;">
+          <input
+            type="number"
+            name=""
+            id="currentAnswer"
+            min="0"
+            max="81"
+            step="1"
+            placeholder="Answer here"
+          />
+        </div>
+        <div style="width: 250px; height: 60px;">
+          <button type="button" id="submit" onclick="handleSubmit()">
+            Submit<audio
+              id="submitSound"
+              src="https://www.fesliyanstudios.com/play-mp3/6683"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div style="width: 250px; height: 60px;">
+          <h3 id="greenScore">Correct: <span id="green"></span></h3>
+        </div>
+        <div style="width: 250px; height: 60px;">
+          <h3 id="redScore">Incorrect: <span id="red"></span></h3>
+        </div>
+        <div style="width: 250px; height: 60px;">
+          <button type="button" id="restart" onclick="handleRestart()">
+            Restart<audio
+              id="restartSound"
+              src="https://www.fesliyanstudios.com/play-mp3/6683"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <h3 id="gameResult"></h3>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
