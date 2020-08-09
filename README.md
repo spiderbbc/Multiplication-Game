@@ -5,7 +5,7 @@
 - git clone
 - Go to the root of the Directory.
 - Open index.html with any web browser
-- Jugar y divertirse
+- Play and Fun!
 
 ## Usage
 
